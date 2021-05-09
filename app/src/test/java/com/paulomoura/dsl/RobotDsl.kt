@@ -1,6 +1,7 @@
 package com.paulomoura.dsl
 
-fun <T : BaseRobot> initRobot(robot: T, function: T.() -> Unit): T {
+fun <T : BaseRobot> initRobot(robotClass: Class<T>, function: T.() -> Unit): T {
+    val robot = robotClass.newInstance()
     with(robot, function)
     return robot
 }
