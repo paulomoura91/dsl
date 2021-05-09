@@ -13,7 +13,7 @@ class MainActivityRobot : BaseRobot() {
     }
 
     fun clickButton() {
-        activity.findViewById<Button>(R.id.button).performClick()
+        activity.findViewById<Button>(R.id.buttonChangeTexts).performClick()
     }
 
     fun textViewsTextsHaveChanged() {

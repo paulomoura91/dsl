@@ -38,7 +38,7 @@ public class MainActivityTestJava {
 
     @Test
     public void verifyTextViewsTextsAfterButtonClick() {
-        mainActivity.findViewById(R.id.button).performClick();
+        mainActivity.findViewById(R.id.buttonChangeTexts).performClick();
         boolean textView1IsCorrect = false, textView2IsCorrect = false;
         View textView1 = mainActivity.findViewById(R.id.textView1);
         if (textView1 instanceof TextView) {

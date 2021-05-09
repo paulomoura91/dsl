@@ -31,7 +31,7 @@
         tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonChangeTexts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -41,4 +41,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonCallSecondActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Call Second Activity"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

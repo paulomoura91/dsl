@@ -29,7 +29,7 @@ class MainActivityTestKotlin {
 
     @Test
     fun `verify if TextViews are being shown correctly after performing the button click`() {
-        mainActivity.findViewById<Button>(R.id.button).performClick()
+        mainActivity.findViewById<Button>(R.id.buttonChangeTexts).performClick()
         assert(mainActivity.findViewById<TextView>(R.id.textView1).text == "TEXTVIEW1 ALTERADO")
         assert(mainActivity.findViewById<TextView>(R.id.textView2).text == "TEXTVIEW2 ALTERADO")
     }
