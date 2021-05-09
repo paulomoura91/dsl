@@ -1,8 +1,10 @@
-package com.paulomoura.dsl
+package com.paulomoura.dsl.mainactivity
 
 import android.app.Activity
 import android.widget.Button
 import android.widget.TextView
+import com.paulomoura.dsl.BaseRobot
+import com.paulomoura.dsl.R
 
 class MainActivityRobot : BaseRobot() {
     var activity = Activity()

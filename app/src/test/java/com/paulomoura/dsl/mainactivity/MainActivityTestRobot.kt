@@ -1,8 +1,12 @@
-package com.paulomoura.dsl
+package com.paulomoura.dsl.mainactivity
 
 import android.app.Activity
 import androidx.test.core.app.ActivityScenario
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.paulomoura.dsl.MainActivity
+import com.paulomoura.dsl.andVerifyThat
+import com.paulomoura.dsl.initRobot
+import com.paulomoura.dsl.then
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
