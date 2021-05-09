@@ -4,11 +4,7 @@ import android.app.Activity
 import android.widget.Button
 import android.widget.TextView
 
-fun initRobot(function: Robot.() -> Unit): Robot = Robot().apply(function)
-infix fun Robot.then(function: Robot.() -> Unit): Robot = this.apply(function)
-infix fun Robot.andVerifyThat(function: Robot.() -> Unit): Robot = this.apply(function)
-
-class Robot {
+class MainActivityRobot : BaseRobot() {
     var activity = Activity()
 
     fun textViewsTextsAreBeingInitializedCorrectly() {

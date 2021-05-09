@@ -22,7 +22,7 @@ class MainActivityTestRobot {
 
     @Test
     fun `verify if TextViews are being shown correctly right after Activity starts`() {
-        initRobot {
+        initRobot(MainActivityRobot()) {
             activity = mainActivity
         } andVerifyThat {
             textViewsTextsAreBeingInitializedCorrectly()
@@ -31,7 +31,7 @@ class MainActivityTestRobot {
 
     @Test
     fun `verify if TextViews are being shown correctly after performing the button click`() {
-        initRobot {
+        initRobot(MainActivityRobot()) {
             activity = mainActivity
         } then {
             clickButton()
